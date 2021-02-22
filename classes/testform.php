@@ -32,7 +32,7 @@ class testform extends \core_form\dynamic_form {
     }
 
     protected function check_access_for_dynamic_submission(): void {
-        require_capability('moodle/site:config', \context_system::instance());
+        throw new \coding_exception('Bad thing');
     }
 
     public function set_data_for_dynamic_submission(): void {
